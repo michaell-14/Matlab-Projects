@@ -1,7 +1,7 @@
 clear all
 close all
 
-img = imread('cameraman.pgm');
+img = imread('sample.pgm');
 figure;
 imshow(img);
 disp(size(img))
@@ -12,12 +12,12 @@ img2 = upSample_func(img);
 imshow(img2);
 disp(size(img2))
 disp(img2(end-3:end, end-3:end));
-imwrite(img2, ['cameraman2.pgm']);
+imwrite(img2, ['sample1.pgm']);
 
 figure;
 img4 = upSample_func(img2);
 imshow(img4);
 disp(size(img4))
 disp(img4(end-7:end, end-7:end));
-imwrite(img4, ['cameraman4.pgm']);
+imwrite(img4, ['sample3.pgm']);
 
